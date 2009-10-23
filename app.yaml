@@ -1,0 +1,12 @@
+application: wavbot
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /_wave/.*
+  script: wavbot.py
+- url: /assets
+  static_dir: assets
+- url: /
+  static_dir: static
